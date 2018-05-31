@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.francisco.proj_kcs.SettingsFragment">
+
+
+    <TextView
+        android:id="@+id/language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/language"
+        android:textSize="20sp"
+        android:textColor="@color/TextHome"
+        android:layout_margin="20dp"
+        android:drawableLeft="@drawable/ic_language"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/quicksand"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:id="@+id/layoutLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/language"
+        android:layout_centerHorizontal="true">
+
+
+        <TextView
+            android:id="@+id/portuguese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/portugues"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_portugal"
+            android:drawablePadding="10dp"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switchLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/portuguese"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:theme="@style/SCBSwitch"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/switchLanguage"
+            android:layout_marginLeft="10dp"
+            android:text="@string/ingles"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_united_kingdom"
+            android:drawablePadding="10dp"/>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutLanguage"
+        android:layout_marginTop="20dp"
+        android:layout_alignStart="@id/language"
+        android:text="@string/about"
+        android:textSize="20sp"
+        android:textColor="@color/TextHome"
+        android:drawableLeft="@drawable/ic_info_black_24dp"
+        android:drawableTint="@color/TextHome"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/quicksand"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/about"
+        android:layout_below="@id/about"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/aboutText"
+        android:textAlignment="viewStart" />
+
+</RelativeLayout>

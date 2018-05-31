@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:descendantFocusability="blocksDescendants">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardCompra"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="6dp"
+        app:cardUseCompatPadding="true">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+
+            <ImageView
+                android:id="@+id/imageCart"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:padding="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/fundo1"
+                android:background="@drawable/image_cart"
+                />
+
+
+            <TextView
+                android:id="@+id/productNameCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome do produto"
+                android:textSize="14sp"
+                android:layout_toRightOf="@id/imageCart"
+                android:textStyle="bold"
+                android:textColor="@color/TextHome"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/tamanho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tamanho: S"
+                android:layout_below="@id/productNameCart"
+                android:layout_alignStart="@id/productNameCart"
+                android:layout_marginTop="10dp"/>
+
+
+            <TextView
+                android:id="@+id/precoCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preço: 30.90 €"
+                android:layout_below="@id/tamanho"
+                android:layout_alignStart="@id/tamanho"
+                android:layout_marginTop="10dp"/>
+
+
+            <TextView
+                android:id="@+id/qtd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantidade: "
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:layout_toRightOf="@id/precoCart"
+                android:layout_below="@id/tamanho"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/TextHome" />
+
+            <TextView
+                android:id="@+id/qtdNumber"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="1"
+                android:layout_toRightOf="@id/qtd"
+                android:layout_below="@id/tamanho"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="10dp"/>
+
+
+            <ImageButton
+                android:id="@+id/deleteProduct"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_close_black_24dp"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/transparent" />
+
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

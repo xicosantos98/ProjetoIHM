@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.francisco.proj_kcs.LoginActivity">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.2"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#8067b0d6">
+
+    </View>
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/login"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/welcome"-->
+        <!--android:fontFamily="@font/roboto_medium"-->
+        <!--android:textColor="#A6000000"-->
+        <!--android:layout_marginTop="130dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:textSize="40sp"-->
+        <!--android:focusable="true"-->
+        <!--android:focusableInTouchMode="true"/>-->
+
+    <ImageView
+        android:id="@+id/imageLogin"
+        android:layout_width="@dimen/login_size"
+        android:layout_height="@dimen/login_size"
+        android:src="@drawable/logobranco"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="30dp"
+        />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="39dp"
+        android:layout_below="@id/imageLogin"
+        android:layout_centerInParent="true"
+        android:inputType="text"
+        android:imeOptions="actionGo"
+        android:fontFamily="@font/roboto"
+        android:id="@+id/userEditText"
+        android:textColor="#757575"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#99548fae"/>
+
+    <TextView
+        android:id="@+id/textUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/userEditText"
+        android:layout_alignStart="@+id/userEditText"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="17sp"
+        android:text="Username" />
+
+    <EditText
+        android:id="@+id/passwdEditText"
+        android:layout_width="200dp"
+        android:layout_height="39dp"
+        android:layout_below="@id/userEditText"
+        android:layout_centerInParent="true"
+        android:inputType="numberPassword"
+        android:fontFamily="@font/roboto"
+        android:textColor="#757575"
+        android:imeOptions="actionSend"
+        android:backgroundTint="#99548fae"/>
+
+
+
+    <TextView
+        android:id="@+id/textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_above="@id/passwdEditText"
+        android:layout_alignStart="@id/passwdEditText"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="20dp"
+        android:textSize="17sp"
+        android:fontFamily="@font/roboto_medium"/>
+
+
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:background="@drawable/my_button"
+        android:layout_below="@id/passwdEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Login"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:background="@drawable/my_buttonregister"
+        android:layout_below="@id/buttonLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Registar"
+        android:textColor="@color/white"
+        android:onClick="goToRegisterPage"/>
+
+    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonRegister"
+        app:spinning_bar_color="@color/white"
+        app:spinning_bar_padding="6dp"
+        android:layout_marginTop="30dp"
+        />
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#67b0d6</color>
+    <color name="colorPrimaryDark">#548fae</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="login1"> #accbee</color>
+    <color name="login2"> #e7f0fd</color>
+    <color name="background">#e8e8e8</color>
+    <color name="white">#ffffff</color>
+    <color name="loginForm"> #80FFFFFF</color>
+    <color name="Bar1"> #457fca</color>
+    <color name="Bar2"> #5691c8</color>
+    <color name="TextNav"> #616161 </color>
+    <color name="BgNav"> #E6E3F2FD</color>
+    <color name="colorHeader"> #F5F5F5</color>
+    <color name="BgHeader"> #1976D2</color>
+    <color name="TextHome"> #38474f</color>
+    <color name="colorBackground"> #E0E0E0</color>
+
+    <color name="corAzul"> #c0d3ec </color>
+    <color name="corRosa"> #fce3df</color>
+    <color name="red"> #E53935</color>
+
+</resources>

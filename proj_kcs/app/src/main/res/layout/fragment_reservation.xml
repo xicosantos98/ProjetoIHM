@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.francisco.proj_kcs.ReservationFragment">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+
+            <TextView
+                android:id="@+id/titleReservation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/quicksand"
+                android:text="@string/confirmDate"
+                android:textColor="@color/TextHome"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dataReserva"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titleReservation"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15dp"
+                android:backgroundTint="@color/TextHome"
+                android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/quicksand"
+                android:text="@string/reservationDate"
+                android:textColor="@color/TextHome"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/valorData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dataReserva"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:text="24/05/2018"
+                android:textSize="17sp" />
+
+            <ImageButton
+                android:id="@+id/editDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_edit_black_24dp"
+                android:background="@android:color/transparent"
+                android:layout_below="@id/dataReserva"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/valorData"/>
+
+
+            <!--<Button-->
+
+                <!--android:id="@+id/chooseDate"-->
+                <!--android:layout_width="135dp"-->
+                <!--android:textSize="12sp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_below="@id/valorData"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:background="@drawable/my_button"-->
+                <!--android:backgroundTint="@color/TextHome"-->
+                <!--android:text="@string/changeDate"-->
+                <!--android:textColor="@color/white" />-->
+
+
+            <Button
+                android:id="@+id/confirmDate"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/valorData"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/my_buttonregister"
+                android:backgroundTint="@color/TextHome"
+                android:text="@string/confirmFinal"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/cancelDate"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/confirmDate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/my_buttonregister"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="@string/cancelFinal"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+</RelativeLayout>

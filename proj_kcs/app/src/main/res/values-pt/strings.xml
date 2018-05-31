@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Kid\'s Clothes and Shoes</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="welcome"> Bem-vindo </string>
+    <string name="account"> Perfil </string>
+    <string name="clothes"> Roupa</string>
+    <string name="shoes"> Calçado</string>
+    <string name="wish"> Lista de desejos</string>
+    <string name="cart"> Carrinho de compras</string>
+    <string name="purchases"> Compras</string>
+    <string name="reservations"> Reservas</string>
+    <string name="settings"> Definições </string>
+    <string name="help"> Ajuda</string>
+    <string name="home"> Inicio</string>
+    <string name="header"> Roupa e calçado</string>
+    <string name="slogan"> Moda para o seu filho</string>
+    <string name="slogan1"> Roupa e calçado</string>
+    <string name="searchBox"> Pesquise por produtos</string>
+    <string name="allProducts"> Ver todos os produtos</string>
+    <string name="products"> Produtos</string>
+    <string name="topProdutcts"> Destaques </string>
+    <string name="successfulLogin">Login com sucesso ! </string>
+    <string name="wrongLogin">Credenciais erradas !</string>
+    <string name="details"> Detalhes </string>
+    <string name="ProductName">Nome de produto </string>
+    <string name="Description"> Descrição</string>
+    <string name="Color"> Cor</string>
+    <string name="pickColor"> Escolha uma cor para o produto</string>
+    <string name="result"> Resultados encontrados para </string>
+    <string name="results"> Resultados</string>
+    <string name="errorMessage">Nenhum produto encontrado</string>
+    <string name="afiltrar">A filtrar ...</string>
+    <string name="favorites"> Os seus produtos preferidos</string>
+    <string name="addFavorite"> Produto adicionado à wishlist! </string>
+    <string name="rmFavorite"> Produto removido da wishlist! </string>
+    <string name="type"> Tipo de produto </string>
+    <string name="size"> Tamanho</string>
+    <string name="pickSize"> Tamanhos disponíveis</string>
+    <string name="addCart"> Adicionar ao carrinho </string>
+    <string name="fimCompra"> Finalizar compra </string>
+    <string name="fimReserva"> Reservar produtos</string>
+    <string name="allreadyInCart"> Produto já adicionado ao carrinho</string>
+    <string name="addedInCart"> Produto adicionado ao carrinho!</string>
+    <string name="noProducts"> Nenhum produto no carrinho!</string>
+    <string name="produtosCarrinho"> Produtos no carrinho</string>
+    <string name="pickQtd"> Escolha a quantidade</string>
+    <string name="quantity"> Quantidade</string>
+    <string name="deleting"> A eliminar ...</string>
+    <string name="confirm"> Confirmar pagamento</string>
+    <string name="itemShipped"> Morada de entrega</string>
+    <string name="shipping"> Portes</string>
+    <string name="confirmFinal"> Confirmar</string>
+    <string name="cancelFinal"> Cancelar</string>
+    <string name="productBuy"> Compra efetuada</string>
+    <string name="wait"> A registar compra ...</string>
+    <string name="comprados"> Produtos comprados </string>
+    <string name="reserva"> Reservas</string>
+    <string name="confirmDate"> Confirmar data e loja</string>
+    <string name="reservationDate"> Data de reserva</string>
+    <string name="changeDate"> Alterar data</string>
+    <string name="location"> Localização da loja</string>
+    <string name="seeLocation"> Ver localização</string>
+    <string name="pickLocation"> Escolha uma das lojas</string>
+    <string name="confirmReservation1"> Confirmar (Passo 1/2)</string>
+    <string name="confirmReservation2"> Confirmar (Passo 2/2)</string>
+    <string name="noProductsBought"> Nenhum produto comprado !</string>
+    <string name="noProductsReserved"> Nenhum produto reservado !</string>
+    <string name="logout"> Terminar sessão</string>
+    <string name="language"> Idioma</string>
+    <string name="portugues"> Português</string>
+    <string name="ingles"> Inglês</string>
+    <string name="about"> Sobre</string>
+    <string name="aboutText"> A aplicação "Kid's Clothes and Shoes" foi desenvolvida no âmbito da cadeira Interação Homem Máquina
+    do curso de Engenharia Informática na Escola Superior de Tecnologia e Gestão de Viana do Castelo. É um protótipo de uma aplicação
+    que simula a gestão de uma loja de roupa para crianças e todas as imagens foram retiradas da página web da LaRedoute.
+    Foi desenvolvida por Francisco Santos, aluno de Engenheria Informática nº18474</string>
+</resources>

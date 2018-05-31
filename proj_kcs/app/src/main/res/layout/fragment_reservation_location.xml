@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.francisco.proj_kcs.ReservationLocationFragment">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="55dp"
+                android:backgroundTint="@color/TextHome"
+                android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/quicksand"
+                android:text="@string/pickLocation"
+                android:textColor="@color/TextHome"
+                android:textSize="23sp" />
+
+
+            <TextView
+                android:id="@+id/codigopostal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rua Coisa 4900-508, Viana do Castelo"
+                android:drawableLeft="@drawable/ic_google"
+                android:drawablePadding="10dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_below="@id/location"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/phoneStore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/codigopostal"
+                android:layout_centerHorizontal="true"
+                android:text="250 734 875"
+                android:backgroundTint="@color/TextHome"
+                android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+                android:drawablePadding="10dp"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/storeLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phoneStore"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:text="Kid's Clothes and Shoes"
+                android:backgroundTint="@color/TextHome"
+                android:drawableLeft="@drawable/ic_store_black_24dp"
+                android:drawablePadding="10dp"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/buttonLocation1"
+                android:layout_width="160dp"
+                android:layout_height="35dp"
+                android:background="@drawable/my_button"
+                android:layout_below="@id/storeLocation"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="12sp"
+                android:text="@string/seeLocation"
+                android:textColor="@color/white" />
+
+
+
+            <TextView
+                android:id="@+id/codigopostal1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rua da ESTG 4900-108, Viana do Castelo"
+                android:drawableLeft="@drawable/ic_google"
+                android:drawablePadding="10dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_below="@id/buttonLocation1"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/phoneStore1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/codigopostal1"
+                android:layout_centerHorizontal="true"
+                android:text="250 100 100"
+                android:backgroundTint="@color/TextHome"
+                android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+                android:drawablePadding="10dp"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/storeLocation1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phoneStore1"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:text="Kid's Store"
+                android:backgroundTint="@color/TextHome"
+                android:drawableLeft="@drawable/ic_store_black_24dp"
+                android:drawablePadding="10dp"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/buttonLocation2"
+                android:layout_width="160dp"
+                android:layout_height="35dp"
+                android:background="@drawable/my_button"
+                android:layout_below="@id/storeLocation1"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/seeLocation"
+                android:textSize="12sp"
+                android:textColor="@color/white" />
+
+
+
+        </RelativeLayout>
+
+
+</RelativeLayout>
+

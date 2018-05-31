@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.francisco.proj_kcs.RegisterActivity"
+    android:background="#4967b0d6">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textNome"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextNome"
+                    android:hint="Nome"
+                    android:inputType="text"
+                    android:gravity="center_horizontal"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="200dp"
+                android:id="@+id/textMail"
+                android:layout_below="@id/textNome"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextMail"
+                    android:inputType="text"
+                    android:hint="Email"
+                    android:gravity="center_horizontal"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="200dp"
+                android:id="@+id/textTlm"
+                android:layout_below="@id/textMail"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextTlm"
+                    android:hint="Telemóvel"
+                    android:inputType="number"
+                    android:gravity="center_horizontal"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="200dp"
+                android:layout_below="@id/textTlm"
+                android:id="@+id/textUser"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextUser"
+                    android:hint="Username"
+                    android:inputType="text"
+                    android:gravity="center_horizontal"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="200dp"
+                android:layout_below="@id/textUser"
+                android:layout_height="wrap_content"
+                android:id="@+id/textPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextPassword"
+                    android:hint="Password"
+                    android:inputType="numberPassword"
+                    android:gravity="center_horizontal"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="200dp"
+                android:layout_below="@id/textPassword"
+                android:id="@+id/textRua"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextRua"
+                    android:hint="Rua"
+                    android:inputType="text"
+                    android:gravity="center_horizontal"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="200dp"
+                android:layout_below="@id/textRua"
+                android:id="@+id/textCP"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextCP"
+                    android:hint="Código-Postal"
+                    android:inputType="number"
+                    android:gravity="center_horizontal"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/confirmRegister"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:background="@drawable/my_buttonregister"
+                android:layout_below="@id/textCP"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Registar"
+                android:textColor="@color/white"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

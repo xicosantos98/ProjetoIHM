@@ -1,0 +1,431 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.example.francisco.proj_kcs.HomeFragment">
+
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:onClick="setupUI"
+            tools:context=".MainActivity">
+
+
+            <AutoCompleteTextView
+                android:id="@+id/autoComplete"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border_textview"
+                android:drawablePadding="20dp"
+                android:drawableStart="@drawable/ic_search_black_24dp"
+                android:hint="@string/searchBox"
+                android:lines="1"
+                android:paddingBottom="18dp"
+                android:paddingLeft="40dp"
+                android:paddingTop="18dp"
+                android:singleLine="true"
+                android:layout_marginTop="10dp"
+                android:textSize="13sp"
+                android:imeOptions="actionSend"/>
+
+            <View
+                android:id="@+id/View1"
+                android:layout_width="70dp"
+                android:layout_height="1dp"
+                android:layout_below="@id/autoComplete"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:background="@color/TextHome"></View>
+
+            <TextView
+                android:id="@+id/topProducts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/View1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/quicksand"
+                android:textStyle="bold"
+                android:text="@string/topProdutcts"
+                android:textColor="@color/TextHome"
+                android:textSize="25sp" />
+
+            <View
+                android:id="@+id/View2"
+                android:layout_width="70dp"
+                android:layout_height="1dp"
+                android:layout_below="@id/topProducts"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:background="@color/TextHome" />
+
+
+            <RelativeLayout
+                android:id="@+id/layoutDestaques1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/View2">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_view_1"
+                        android:layout_width="170dp"
+                        android:layout_height="270dp"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/cardview"
+                        card_view:cardBackgroundColor="@color/colorHeader"
+                        card_view:cardCornerRadius="2dp"
+                        card_view:cardElevation="8dp"
+                        card_view:cardUseCompatPadding="true">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/preco1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="20.99€"
+                                android:textSize="11sp">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@id/preco1"
+                                android:text="15.99€"
+                                android:textColor="@color/TextHome"
+                                android:textSize="11sp"
+                                android:fontFamily="@font/roboto_medium"/>
+
+                            <ImageView
+                                android:id="@+id/card1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/preco1"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:src="@drawable/fundo2" />
+
+                        </RelativeLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_view_2"
+                        android:layout_width="170dp"
+                        android:layout_height="270dp"
+                        android:layout_toRightOf="@id/card_view_1"
+                        android:background="@drawable/cardview"
+                        card_view:cardBackgroundColor="@color/colorHeader"
+                        card_view:cardCornerRadius="2dp"
+                        card_view:cardElevation="8dp"
+                        card_view:cardUseCompatPadding="true">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/preco2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="15.99€"
+                                android:textSize="11sp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:textColor="@color/TextHome">
+
+                            </TextView>
+
+
+                            <ImageView
+                                android:id="@+id/card2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:src="@drawable/fundo4" />
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="18dp"
+                    android:src="@drawable/ic_sale" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutDestaques2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutDestaques1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_view_3"
+                        android:layout_width="170dp"
+                        android:layout_height="270dp"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/cardview"
+                        card_view:cardBackgroundColor="@color/colorHeader"
+                        card_view:cardCornerRadius="2dp"
+                        card_view:cardElevation="8dp"
+                        card_view:cardUseCompatPadding="true">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/preco3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="25.99€"
+                                android:textSize="11sp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:textColor="@color/TextHome">
+
+                            </TextView>
+
+
+                            <ImageView
+                                android:id="@+id/card3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/preco3"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:src="@drawable/fundo5" />
+
+                        </RelativeLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_view_4"
+                        android:layout_width="170dp"
+                        android:layout_height="270dp"
+                        android:layout_toRightOf="@id/card_view_3"
+                        android:background="@drawable/cardview"
+                        card_view:cardBackgroundColor="@color/colorHeader"
+                        card_view:cardCornerRadius="2dp"
+                        card_view:cardElevation="8dp"
+                        card_view:cardUseCompatPadding="true">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/preco4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="15.99€"
+                                android:textSize="11sp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:textColor="@color/TextHome">
+
+                            </TextView>
+
+
+                            <ImageView
+                                android:id="@+id/card4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:src="@drawable/fundo7" />
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layoutDestaques3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutDestaques2">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_view_5"
+                        android:layout_width="170dp"
+                        android:layout_height="270dp"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/cardview"
+                        card_view:cardBackgroundColor="@color/colorHeader"
+                        card_view:cardCornerRadius="2dp"
+                        card_view:cardElevation="8dp"
+                        card_view:cardUseCompatPadding="true">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/preco5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="35.99€"
+                                android:textSize="11sp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:textColor="@color/TextHome">
+
+                            </TextView>
+
+
+                            <ImageView
+                                android:id="@+id/card5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:src="@drawable/fundo8" />
+
+                        </RelativeLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_view_6"
+                        android:layout_width="170dp"
+                        android:layout_height="270dp"
+                        android:layout_toRightOf="@id/card_view_5"
+                        android:background="@drawable/cardview"
+                        card_view:cardBackgroundColor="@color/colorHeader"
+                        card_view:cardCornerRadius="2dp"
+                        card_view:cardElevation="8dp"
+                        card_view:cardUseCompatPadding="true">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/preco6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="12.99€"
+                                android:textSize="11sp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:textColor="@color/TextHome">
+
+                            </TextView>
+
+
+                            <ImageView
+                                android:id="@+id/card6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+
+                                android:src="@drawable/fundo3" />
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutDestaques3">
+
+                <Button
+                    android:id="@+id/allProducts"
+                    android:layout_width="190dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/TextHome"
+                    android:fontFamily="@font/quicksand"
+                    android:textStyle="bold"
+                    android:padding="13dp"
+                    android:text="@string/allProducts"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textColorHighlight="@color/TextHome"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,208 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.francisco.proj_kcs.PagamentoFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/titlePayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm"
+                android:textSize="30sp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/quicksand"
+                android:textStyle="bold"
+                android:textColor="@color/TextHome"
+                />
+
+
+            <ImageView
+                android:id="@+id/imageMultibanco"
+                android:layout_below="@id/titlePayment"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/multibanco" />
+            
+            
+            <TextView
+                android:id="@+id/entidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entidade:"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/imageMultibanco"
+                android:layout_alignTop="@id/imageMultibanco"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/valorEntidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/imageMultibanco"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentRight="true"
+                android:text="19199"
+                android:textAlignment="textEnd"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/referencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Referência:"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/imageMultibanco"
+                android:layout_below="@id/entidade"
+                android:layout_marginTop="10dp"/>
+
+
+            <TextView
+                android:id="@+id/valorReferencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/entidade"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentRight="true"
+                android:text="123 456 789"
+                android:textAlignment="textEnd"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/valor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valor:"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/imageMultibanco"
+                android:layout_below="@id/referencia"
+                android:layout_marginTop="10dp"/>
+
+
+            <TextView
+                android:id="@+id/valor_preco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/referencia"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/valor"
+                android:text="10.99€"
+                android:textAlignment="textEnd"
+                android:textSize="15sp" />
+
+
+            <View
+                android:id="@+id/View1"
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_below="@id/valor_preco"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:background="@color/TextHome" />
+
+
+            <TextView
+                android:id="@+id/enviarpara"
+                android:layout_below="@id/View1"
+                android:layout_marginLeft="20dp"
+                android:layout_alignStart="@id/imageMultibanco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/itemShipped"
+                android:fontFamily="@font/quicksand"
+                android:textStyle="bold"
+                android:textColor="@color/TextHome"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User"
+                android:layout_below="@id/enviarpara"
+                android:layout_marginTop="20dp"
+                android:layout_alignStart="@id/enviarpara"/>
+
+            <TextView
+                android:id="@+id/rua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rua de S.Qualquer Coisa Lote nº4 2º Esqueerdo"
+                android:layout_below="@id/user"
+                android:layout_marginTop="10dp"
+                android:layout_alignStart="@id/enviarpara"/>
+
+            <TextView
+                android:id="@+id/localidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Viana do Castelo 4900-372"
+                android:layout_below="@id/rua"
+                android:layout_marginTop="10dp"
+                android:layout_alignStart="@id/enviarpara"/>
+
+            <TextView
+                android:id="@+id/pais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Portugal"
+                android:layout_below="@id/localidade"
+                android:layout_marginTop="10dp"
+                android:layout_alignStart="@id/enviarpara"/>
+
+            <Button
+                android:id="@+id/buttonConfirmar"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/my_button"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/green"
+                android:text="@string/confirmFinal"
+                android:layout_below="@id/pais"
+                android:layout_centerHorizontal="true"/>
+
+            <Button
+                android:id="@+id/buttonCancelar"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/my_button"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/red"
+                android:text="@string/cancelFinal"
+                android:layout_below="@id/buttonConfirmar"
+                android:layout_centerHorizontal="true"/>
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
